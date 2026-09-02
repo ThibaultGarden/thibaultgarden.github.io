@@ -9,8 +9,10 @@
   <meta name="description" content="Thibault Garden - Entretien de jardins, tonte, taille, débroussaillage, désherbage, rabattage et nettoyage dans le 95, 27, 78 et alentours.">
 
   <style>
+
     :root {
       --green: #173f2b;
+      --dark-green: #102c1e;
       --cream: #f5f1e8;
       --white: #ffffff;
       --text: #26332b;
@@ -39,6 +41,7 @@
       text-decoration: none;
     }
 
+
     /* =========================
        NAVIGATION
     ========================= */
@@ -49,7 +52,7 @@
       left: 0;
       width: 100%;
       z-index: 1000;
-      background: rgba(23, 63, 43, 0.96);
+      background: rgba(23, 63, 43, 0.97);
       backdrop-filter: blur(8px);
     }
 
@@ -57,6 +60,7 @@
       max-width: 1150px;
       margin: auto;
       padding: 15px 20px;
+
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -85,6 +89,7 @@
       color: var(--gold);
     }
 
+
     /* =========================
        ACCUEIL
     ========================= */
@@ -99,32 +104,41 @@
 
       text-align: center;
 
+      /*
+        Photo AVANT utilisée comme fond
+      */
       background:
         linear-gradient(
-          rgba(10, 35, 23, 0.62),
+          rgba(10, 35, 23, 0.60),
           rgba(10, 35, 23, 0.72)
         ),
-        url("realisation-3.jpeg?v=7") center/cover no-repeat;
+        url("realisation-1.jpeg") center / cover no-repeat;
     }
 
     .hero-content {
       width: 100%;
-      max-width: 850px;
+      max-width: 900px;
       color: white;
     }
 
+
     /* =========================
-       NOUVEAU LOGO HORIZONTAL
+       LOGO HORIZONTAL
     ========================= */
 
     .hero-logo {
       display: block;
+
       width: min(520px, 90vw);
       height: auto;
+
       max-height: 190px;
+
       object-fit: contain;
+
       margin: 0 auto 30px;
     }
+
 
     .hero h1 {
       font-size: 48px;
@@ -139,11 +153,16 @@
 
     .hero-button {
       display: inline-block;
+
       background: white;
       color: var(--green);
+
       padding: 14px 28px;
+
       border-radius: 30px;
+
       font-weight: bold;
+
       transition: 0.2s;
     }
 
@@ -152,6 +171,7 @@
       background: var(--gold);
       color: white;
     }
+
 
     /* =========================
        SECTIONS
@@ -168,10 +188,14 @@
 
     .section-title {
       text-align: center;
+
       color: var(--green);
+
       font-size: 34px;
+
       margin-bottom: 45px;
     }
+
 
     /* =========================
        PRESTATIONS
@@ -179,27 +203,37 @@
 
     .services {
       display: grid;
+
       grid-template-columns: repeat(3, 1fr);
+
       gap: 20px;
     }
 
     .service-card {
       background: white;
+
       padding: 30px 20px;
+
       border-radius: 16px;
+
       text-align: center;
-      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+
+      box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.07);
     }
 
     .service-card h3 {
       color: var(--green);
+
       margin-bottom: 10px;
+
       font-size: 21px;
     }
 
     .service-card p {
       font-size: 15px;
     }
+
 
     /* =========================
        REALISATIONS
@@ -211,44 +245,63 @@
 
     .pair-title {
       text-align: center;
+
       color: var(--green);
+
       font-size: 22px;
+
       font-weight: bold;
+
       margin-bottom: 18px;
     }
 
     .pair-grid {
       display: grid;
+
       grid-template-columns: repeat(2, 1fr);
+
       gap: 22px;
     }
 
     .photo-card {
       background: white;
+
       border-radius: 16px;
+
       overflow: hidden;
-      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+      box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.08);
     }
 
     .photo-card img {
       width: 100%;
+
       height: 330px;
+
       object-fit: cover;
+
       display: block;
     }
 
     .photo-label {
       padding: 13px;
+
       text-align: center;
+
       font-weight: bold;
+
       color: var(--green);
+
       font-size: 17px;
     }
 
     .single-photo {
       max-width: 600px;
+
       margin: 0 auto;
     }
+
 
     /* =========================
        CONTACT
@@ -256,6 +309,7 @@
 
     .contact-section {
       background: var(--green);
+
       color: white;
     }
 
@@ -265,21 +319,29 @@
 
     .contact-grid {
       display: grid;
+
       grid-template-columns: repeat(2, 1fr);
+
       gap: 25px;
+
       max-width: 850px;
+
       margin: auto;
     }
 
     .contact-card {
-      background: rgba(255, 255, 255, 0.08);
+      background: rgba(255,255,255,0.08);
+
       padding: 25px;
+
       border-radius: 15px;
+
       text-align: center;
     }
 
     .contact-card h3 {
       margin-bottom: 8px;
+
       color: var(--gold);
     }
 
@@ -291,12 +353,14 @@
       text-decoration: underline;
     }
 
+
     /* =========================
        INFORMATIONS
     ========================= */
 
     .infos {
       text-align: center;
+
       margin-top: 45px;
     }
 
@@ -304,20 +368,26 @@
       margin: 7px 0;
     }
 
+
     /* =========================
        FOOTER
     ========================= */
 
     footer {
-      background: #102c1e;
+      background: var(--dark-green);
+
       color: white;
+
       text-align: center;
+
       padding: 25px 20px;
+
       font-size: 14px;
     }
 
+
     /* =========================
-       MOBILE
+       VERSION TELEPHONE
     ========================= */
 
     @media (max-width: 750px) {
@@ -340,13 +410,17 @@
 
       .hero {
         min-height: 90vh;
+
         padding-top: 110px;
       }
 
       .hero-logo {
         width: 88vw;
+
         max-width: 430px;
+
         max-height: 150px;
+
         margin-bottom: 25px;
       }
 
@@ -381,17 +455,22 @@
       .section-title {
         font-size: 29px;
       }
+
     }
+
   </style>
 </head>
 
+
 <body>
+
 
   <!-- =========================
        NAVIGATION
   ========================= -->
 
   <header>
+
     <nav>
 
       <div class="brand">
@@ -399,13 +478,27 @@
       </div>
 
       <ul class="nav-links">
-        <li><a href="#accueil">Accueil</a></li>
-        <li><a href="#prestations">Prestations</a></li>
-        <li><a href="#realisations">Réalisations</a></li>
-        <li><a href="#contact">Contact</a></li>
+
+        <li>
+          <a href="#accueil">Accueil</a>
+        </li>
+
+        <li>
+          <a href="#prestations">Prestations</a>
+        </li>
+
+        <li>
+          <a href="#realisations">Réalisations</a>
+        </li>
+
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+
       </ul>
 
     </nav>
+
   </header>
 
 
@@ -417,8 +510,9 @@
 
     <div class="hero-content">
 
+      <!-- NOUVEAU LOGO -->
       <img
-        src="logo-horizontal.jpeg?v=7"
+        src="logo-horizontal.jpeg.jpg"
         alt="Logo Thibault Garden"
         class="hero-logo"
       >
@@ -431,7 +525,10 @@
         Entretien de jardins dans le 95, 27, 78 et alentours
       </p>
 
-      <a href="#contact" class="hero-button">
+      <a
+        href="#contact"
+        class="hero-button"
+      >
         Me contacter
       </a>
 
@@ -454,47 +551,72 @@
 
       <div class="services">
 
+
         <div class="service-card">
+
           <h3>Tonte</h3>
+
           <p>
             Entretien et tonte de vos pelouses.
           </p>
+
         </div>
 
+
         <div class="service-card">
+
           <h3>Taille</h3>
+
           <p>
             Taille et entretien de vos haies et végétaux.
           </p>
+
         </div>
 
+
         <div class="service-card">
+
           <h3>Débroussaillage</h3>
+
           <p>
             Nettoyage des espaces envahis par la végétation.
           </p>
+
         </div>
 
+
         <div class="service-card">
+
           <h3>Désherbage</h3>
+
           <p>
             Nettoyage et entretien de vos espaces extérieurs.
           </p>
+
         </div>
 
+
         <div class="service-card">
+
           <h3>Rabattage</h3>
+
           <p>
             Réduction et entretien des végétaux selon leurs besoins.
           </p>
+
         </div>
 
+
         <div class="service-card">
+
           <h3>Nettoyage</h3>
+
           <p>
             Nettoyage et remise en état de vos extérieurs.
           </p>
+
         </div>
+
 
       </div>
 
@@ -526,10 +648,11 @@
 
         <div class="pair-grid">
 
+
           <div class="photo-card">
 
             <img
-              src="realisation-1.jpeg?v=7"
+              src="realisation-1.jpeg"
               alt="Haie avant intervention"
             >
 
@@ -543,7 +666,7 @@
           <div class="photo-card">
 
             <img
-              src="realisation-3.jpeg?v=7"
+              src="realisation-3.jpeg"
               alt="Haie après intervention"
             >
 
@@ -552,6 +675,7 @@
             </div>
 
           </div>
+
 
         </div>
 
@@ -568,10 +692,11 @@
 
         <div class="pair-grid">
 
+
           <div class="photo-card">
 
             <img
-              src="realisation-4.jpeg?v=7"
+              src="realisation-4.jpeg"
               alt="Haie avant intervention"
             >
 
@@ -585,7 +710,7 @@
           <div class="photo-card">
 
             <img
-              src="realisation-2.jpeg?v=7"
+              src="realisation-2.jpeg"
               alt="Haie après intervention"
             >
 
@@ -595,19 +720,20 @@
 
           </div>
 
+
         </div>
 
       </div>
 
 
-      <!-- ENTRETIEN EXTERIEUR -->
+      <!-- DERNIERE PHOTO -->
 
       <div class="single-photo">
 
         <div class="photo-card">
 
           <img
-            src="realisation-5.jpeg?v=7"
+            src="realisation-5.jpeg"
             alt="Entretien extérieur"
           >
 
@@ -619,6 +745,7 @@
 
       </div>
 
+
     </div>
 
   </section>
@@ -628,7 +755,10 @@
        CONTACT
   ========================= -->
 
-  <section class="contact-section" id="contact">
+  <section
+    class="contact-section"
+    id="contact"
+  >
 
     <div class="container">
 
@@ -636,7 +766,9 @@
         Contact
       </h2>
 
+
       <div class="contact-grid">
+
 
         <div class="contact-card">
 
@@ -687,6 +819,7 @@
 
         </div>
 
+
       </div>
 
 
@@ -709,6 +842,7 @@
 
       </div>
 
+
     </div>
 
   </section>
@@ -725,6 +859,7 @@
     </p>
 
   </footer>
+
 
 </body>
 </html>
