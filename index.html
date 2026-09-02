@@ -40,7 +40,9 @@
       text-decoration: none;
     }
 
-    /* NAVIGATION */
+    /* =========================
+       NAVIGATION
+    ========================= */
 
     header {
       position: fixed;
@@ -88,7 +90,9 @@
       color: var(--gold);
     }
 
-    /* HERO */
+    /* =========================
+       HERO
+    ========================= */
 
     .hero {
       min-height: 100vh;
@@ -99,8 +103,11 @@
       text-align: center;
 
       background:
-        linear-gradient(rgba(10, 35, 23, 0.62), rgba(10, 35, 23, 0.72)),
-        url("realisation-3.jpeg?v=4") center/cover no-repeat;
+        linear-gradient(
+          rgba(10, 35, 23, 0.62),
+          rgba(10, 35, 23, 0.72)
+        ),
+        url("realisation-3.jpeg?v=5") center/cover no-repeat;
     }
 
     .hero-content {
@@ -108,23 +115,29 @@
       color: white;
     }
 
-    /* LOGO BIEN CADRÉ */
+    /* =========================
+       LOGO
+    ========================= */
 
     .hero-logo-wrap {
-      width: 280px;
-      height: 180px;
+      width: 260px;
+      height: 210px;
       margin: 0 auto 30px;
       overflow: hidden;
       border-radius: 18px;
       background: var(--green);
-      box-shadow: 0 10px 35px rgba(0,0,0,0.25);
+      box-shadow: 0 10px 35px rgba(0, 0, 0, 0.25);
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     .hero-logo {
       width: 100%;
       height: 100%;
-      object-fit: cover;
-      object-position: center 50%;
+      object-fit: contain;
+      object-position: center;
       display: block;
     }
 
@@ -155,7 +168,9 @@
       color: white;
     }
 
-    /* SECTIONS */
+    /* =========================
+       SECTIONS
+    ========================= */
 
     section {
       padding: 80px 20px;
@@ -173,7 +188,9 @@
       margin-bottom: 45px;
     }
 
-    /* PRESTATIONS */
+    /* =========================
+       PRESTATIONS
+    ========================= */
 
     .services {
       display: grid;
@@ -186,7 +203,7 @@
       padding: 30px 20px;
       border-radius: 16px;
       text-align: center;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
     }
 
     .service-card h3 {
@@ -199,13 +216,9 @@
       font-size: 15px;
     }
 
-    /* REALISATIONS */
-
-    .realisation-intro {
-      text-align: center;
-      margin-top: -25px;
-      margin-bottom: 45px;
-    }
+    /* =========================
+       REALISATIONS
+    ========================= */
 
     .pair {
       margin-bottom: 45px;
@@ -229,7 +242,7 @@
       background: white;
       border-radius: 16px;
       overflow: hidden;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
     }
 
     .photo-card img {
@@ -252,7 +265,9 @@
       margin: 0 auto;
     }
 
-    /* CONTACT */
+    /* =========================
+       CONTACT
+    ========================= */
 
     .contact-section {
       background: var(--green);
@@ -272,7 +287,7 @@
     }
 
     .contact-card {
-      background: rgba(255,255,255,0.08);
+      background: rgba(255, 255, 255, 0.08);
       padding: 25px;
       border-radius: 15px;
       text-align: center;
@@ -291,7 +306,9 @@
       text-decoration: underline;
     }
 
-    /* INFOS */
+    /* =========================
+       INFORMATIONS
+    ========================= */
 
     .infos {
       text-align: center;
@@ -302,7 +319,9 @@
       margin: 7px 0;
     }
 
-    /* FOOTER */
+    /* =========================
+       FOOTER
+    ========================= */
 
     footer {
       background: #102c1e;
@@ -312,7 +331,9 @@
       font-size: 14px;
     }
 
-    /* MOBILE */
+    /* =========================
+       MOBILE
+    ========================= */
 
     @media (max-width: 750px) {
 
@@ -334,7 +355,7 @@
 
       .hero-logo-wrap {
         width: 250px;
-        height: 160px;
+        height: 200px;
       }
 
       .hero h1 {
@@ -374,10 +395,13 @@
 
 <body>
 
-  <!-- NAVIGATION -->
+  <!-- =========================
+       NAVIGATION
+  ========================= -->
 
   <header>
     <nav>
+
       <div class="brand">
         THIBAULT <span>garden</span>
       </div>
@@ -388,22 +412,27 @@
         <li><a href="#realisations">Réalisations</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+
     </nav>
   </header>
 
 
-  <!-- ACCUEIL -->
+  <!-- =========================
+       ACCUEIL
+  ========================= -->
 
   <section class="hero" id="accueil">
 
     <div class="hero-content">
 
       <div class="hero-logo-wrap">
+
         <img
-          src="logo.jpeg?v=4"
+          src="logo.jpeg?v=5"
           alt="Logo Thibault Garden"
           class="hero-logo"
         >
+
       </div>
 
       <h1>THIBAULT garden</h1>
@@ -421,7 +450,9 @@
   </section>
 
 
-  <!-- PRESTATIONS -->
+  <!-- =========================
+       PRESTATIONS
+  ========================= -->
 
   <section id="prestations">
 
@@ -482,7 +513,9 @@
   </section>
 
 
-  <!-- REALISATIONS -->
+  <!-- =========================
+       REALISATIONS
+  ========================= -->
 
   <section id="realisations">
 
@@ -492,7 +525,8 @@
         Réalisations
       </h2>
 
-      <!-- PAIR 1 -->
+
+      <!-- PREMIERE REALISATION -->
 
       <div class="pair">
 
@@ -503,25 +537,34 @@
         <div class="pair-grid">
 
           <!-- AVANT -->
+
           <div class="photo-card">
+
             <img
-              src="realisation-1.jpeg?v=4"
+              src="realisation-1.jpeg?v=5"
               alt="Haie avant intervention"
             >
+
             <div class="photo-label">
               Avant
             </div>
+
           </div>
 
+
           <!-- APRES -->
+
           <div class="photo-card">
+
             <img
-              src="realisation-3.jpeg?v=4"
+              src="realisation-3.jpeg?v=5"
               alt="Haie après intervention"
             >
+
             <div class="photo-label">
               Après
             </div>
+
           </div>
 
         </div>
@@ -529,7 +572,7 @@
       </div>
 
 
-      <!-- PAIR 2 -->
+      <!-- DEUXIEME REALISATION -->
 
       <div class="pair">
 
@@ -540,25 +583,34 @@
         <div class="pair-grid">
 
           <!-- AVANT -->
+
           <div class="photo-card">
+
             <img
-              src="realisation-4.jpeg?v=4"
+              src="realisation-4.jpeg?v=5"
               alt="Haie avant intervention"
             >
+
             <div class="photo-label">
               Avant
             </div>
+
           </div>
 
+
           <!-- APRES -->
+
           <div class="photo-card">
+
             <img
-              src="realisation-2.jpeg?v=4"
+              src="realisation-2.jpeg?v=5"
               alt="Haie après intervention"
             >
+
             <div class="photo-label">
               Après
             </div>
+
           </div>
 
         </div>
@@ -566,14 +618,14 @@
       </div>
 
 
-      <!-- PHOTO PORTAIL -->
+      <!-- ENTRETIEN EXTERIEUR -->
 
       <div class="single-photo">
 
         <div class="photo-card">
 
           <img
-            src="realisation-5.jpeg?v=4"
+            src="realisation-5.jpeg?v=5"
             alt="Entretien extérieur"
           >
 
@@ -590,7 +642,9 @@
   </section>
 
 
-  <!-- CONTACT -->
+  <!-- =========================
+       CONTACT
+  ========================= -->
 
   <section class="contact-section" id="contact">
 
@@ -601,6 +655,9 @@
       </h2>
 
       <div class="contact-grid">
+
+
+        <!-- TELEPHONE -->
 
         <div class="contact-card">
 
@@ -613,6 +670,8 @@
         </div>
 
 
+        <!-- EMAIL -->
+
         <div class="contact-card">
 
           <h3>Email</h3>
@@ -624,22 +683,32 @@
         </div>
 
 
+        <!-- INSTAGRAM -->
+
         <div class="contact-card">
 
           <h3>Instagram</h3>
 
-          <a href="https://www.instagram.com/thibault.gaedeen/" target="_blank">
+          <a
+            href="https://www.instagram.com/thibault.gaedeen/"
+            target="_blank"
+          >
             @Thibault.gaedeen
           </a>
 
         </div>
 
 
+        <!-- FACEBOOK -->
+
         <div class="contact-card">
 
           <h3>Facebook</h3>
 
-          <a href="https://www.facebook.com/" target="_blank">
+          <a
+            href="https://www.facebook.com/"
+            target="_blank"
+          >
             Thibaultgardeen
           </a>
 
@@ -648,13 +717,24 @@
       </div>
 
 
+      <!-- INFORMATIONS -->
+
       <div class="infos">
 
-        <p><strong>Zone d'intervention :</strong> 95 / 27 / 78 et alentours</p>
+        <p>
+          <strong>Zone d'intervention :</strong>
+          95 / 27 / 78 et alentours
+        </p>
 
-        <p><strong>Tarifs :</strong> sur devis</p>
+        <p>
+          <strong>Tarifs :</strong>
+          sur devis
+        </p>
 
-        <p><strong>SIRET :</strong> à compléter</p>
+        <p>
+          <strong>SIRET :</strong>
+          à compléter
+        </p>
 
       </div>
 
@@ -663,7 +743,9 @@
   </section>
 
 
-  <!-- FOOTER -->
+  <!-- =========================
+       FOOTER
+  ========================= -->
 
   <footer>
 
