@@ -43,7 +43,7 @@
 
 
     /* =========================
-       NAVIGATION
+       MENU
     ========================= */
 
     header {
@@ -52,6 +52,7 @@
       left: 0;
       width: 100%;
       z-index: 1000;
+
       background: rgba(23, 63, 43, 0.97);
       backdrop-filter: blur(8px);
     }
@@ -104,58 +105,54 @@
 
       text-align: center;
 
-      /*
-        Photo AVANT utilisée comme fond
-      */
-      background:
-        linear-gradient(
-          rgba(10, 35, 23, 0.60),
-          rgba(10, 35, 23, 0.72)
-        ),
-        url("realisation-1.jpeg") center / cover no-repeat;
+      background: var(--cream);
     }
 
     .hero-content {
       width: 100%;
       max-width: 900px;
-      color: white;
     }
 
-
-    /* =========================
-       LOGO HORIZONTAL
-    ========================= */
+    /* LOGO PRINCIPAL */
 
     .hero-logo {
       display: block;
 
-      width: min(520px, 90vw);
+      width: min(650px, 92vw);
+
       height: auto;
 
-      max-height: 190px;
+      max-height: 280px;
 
       object-fit: contain;
 
-      margin: 0 auto 30px;
+      margin: 0 auto 35px;
     }
 
-
     .hero h1 {
+      color: var(--green);
+
       font-size: 48px;
+
       margin-bottom: 15px;
+
       letter-spacing: 1px;
     }
 
     .hero p {
+      color: var(--text);
+
       font-size: 20px;
+
       margin-bottom: 30px;
     }
 
     .hero-button {
       display: inline-block;
 
-      background: white;
-      color: var(--green);
+      background: var(--green);
+
+      color: white;
 
       padding: 14px 28px;
 
@@ -168,8 +165,8 @@
 
     .hero-button:hover {
       transform: translateY(-2px);
+
       background: var(--gold);
-      color: white;
     }
 
 
@@ -218,8 +215,7 @@
 
       text-align: center;
 
-      box-shadow:
-        0 5px 20px rgba(0, 0, 0, 0.07);
+      box-shadow: 0 5px 20px rgba(0,0,0,0.07);
     }
 
     .service-card h3 {
@@ -270,8 +266,7 @@
 
       overflow: hidden;
 
-      box-shadow:
-        0 5px 20px rgba(0, 0, 0, 0.08);
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
     }
 
     .photo-card img {
@@ -355,7 +350,7 @@
 
 
     /* =========================
-       INFORMATIONS
+       INFOS
     ========================= */
 
     .infos {
@@ -387,7 +382,7 @@
 
 
     /* =========================
-       VERSION TELEPHONE
+       TELEPHONE
     ========================= */
 
     @media (max-width: 750px) {
@@ -415,13 +410,13 @@
       }
 
       .hero-logo {
-        width: 88vw;
+        width: 90vw;
 
-        max-width: 430px;
+        max-width: 500px;
 
-        max-height: 150px;
+        max-height: 190px;
 
-        margin-bottom: 25px;
+        margin-bottom: 28px;
       }
 
       .hero h1 {
@@ -465,9 +460,7 @@
 <body>
 
 
-  <!-- =========================
-       NAVIGATION
-  ========================= -->
+  <!-- MENU -->
 
   <header>
 
@@ -502,18 +495,15 @@
   </header>
 
 
-  <!-- =========================
-       ACCUEIL
-  ========================= -->
+  <!-- ACCUEIL -->
 
   <section class="hero" id="accueil">
 
     <div class="hero-content">
 
-      <!-- NOUVEAU LOGO -->
       <img
         src="logo-horizontal.jpeg.jpg"
-        alt="Logo Thibault Garden"
+        alt="Thibault Garden - Jardinier Paysagiste"
         class="hero-logo"
       >
 
@@ -537,9 +527,7 @@
   </section>
 
 
-  <!-- =========================
-       PRESTATIONS
-  ========================= -->
+  <!-- PRESTATIONS -->
 
   <section id="prestations">
 
@@ -551,72 +539,35 @@
 
       <div class="services">
 
-
         <div class="service-card">
-
           <h3>Tonte</h3>
-
-          <p>
-            Entretien et tonte de vos pelouses.
-          </p>
-
+          <p>Entretien et tonte de vos pelouses.</p>
         </div>
 
-
         <div class="service-card">
-
           <h3>Taille</h3>
-
-          <p>
-            Taille et entretien de vos haies et végétaux.
-          </p>
-
+          <p>Taille et entretien de vos haies et végétaux.</p>
         </div>
 
-
         <div class="service-card">
-
           <h3>Débroussaillage</h3>
-
-          <p>
-            Nettoyage des espaces envahis par la végétation.
-          </p>
-
+          <p>Nettoyage des espaces envahis par la végétation.</p>
         </div>
 
-
         <div class="service-card">
-
           <h3>Désherbage</h3>
-
-          <p>
-            Nettoyage et entretien de vos espaces extérieurs.
-          </p>
-
+          <p>Nettoyage et entretien de vos espaces extérieurs.</p>
         </div>
 
-
         <div class="service-card">
-
           <h3>Rabattage</h3>
-
-          <p>
-            Réduction et entretien des végétaux selon leurs besoins.
-          </p>
-
+          <p>Réduction et entretien des végétaux selon leurs besoins.</p>
         </div>
-
 
         <div class="service-card">
-
           <h3>Nettoyage</h3>
-
-          <p>
-            Nettoyage et remise en état de vos extérieurs.
-          </p>
-
+          <p>Nettoyage et remise en état de vos extérieurs.</p>
         </div>
-
 
       </div>
 
@@ -625,9 +576,7 @@
   </section>
 
 
-  <!-- =========================
-       REALISATIONS
-  ========================= -->
+  <!-- REALISATIONS -->
 
   <section id="realisations">
 
@@ -638,7 +587,7 @@
       </h2>
 
 
-      <!-- PREMIERE REALISATION -->
+      <!-- REALISATION 1 -->
 
       <div class="pair">
 
@@ -647,7 +596,6 @@
         </div>
 
         <div class="pair-grid">
-
 
           <div class="photo-card">
 
@@ -662,7 +610,6 @@
 
           </div>
 
-
           <div class="photo-card">
 
             <img
@@ -676,13 +623,12 @@
 
           </div>
 
-
         </div>
 
       </div>
 
 
-      <!-- DEUXIEME REALISATION -->
+      <!-- REALISATION 2 -->
 
       <div class="pair">
 
@@ -691,7 +637,6 @@
         </div>
 
         <div class="pair-grid">
-
 
           <div class="photo-card">
 
@@ -706,7 +651,6 @@
 
           </div>
 
-
           <div class="photo-card">
 
             <img
@@ -720,13 +664,12 @@
 
           </div>
 
-
         </div>
 
       </div>
 
 
-      <!-- DERNIERE PHOTO -->
+      <!-- PHOTO SEULE -->
 
       <div class="single-photo">
 
@@ -745,15 +688,12 @@
 
       </div>
 
-
     </div>
 
   </section>
 
 
-  <!-- =========================
-       CONTACT
-  ========================= -->
+  <!-- CONTACT -->
 
   <section
     class="contact-section"
@@ -765,7 +705,6 @@
       <h2 class="section-title">
         Contact
       </h2>
-
 
       <div class="contact-grid">
 
@@ -842,15 +781,12 @@
 
       </div>
 
-
     </div>
 
   </section>
 
 
-  <!-- =========================
-       FOOTER
-  ========================= -->
+  <!-- FOOTER -->
 
   <footer>
 
