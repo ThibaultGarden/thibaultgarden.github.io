@@ -4,23 +4,25 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Thibault Garden | Jardinier paysagiste</title>
+
 <meta name="description" content="Thibault Garden — jardinier paysagiste dans le 95, 27, 78 et alentours. Tonte, taille, débroussaillage, désherbage, rabattage et nettoyage. Tarifs sur devis.">
 
 <style>
+
 :root{
   --green:#05281e;
   --green2:#0b3b2d;
   --gold:#c9a34a;
   --cream:#f6f2e8;
-  --ink:#17342b
+  --ink:#17342b;
 }
 
 *{
-  box-sizing:border-box
+  box-sizing:border-box;
 }
 
 html{
-  scroll-behavior:smooth
+  scroll-behavior:smooth;
 }
 
 body{
@@ -28,13 +30,15 @@ body{
   font-family:Arial,Helvetica,sans-serif;
   color:var(--ink);
   background:var(--cream);
-  line-height:1.55
+  line-height:1.55;
 }
 
 a{
   text-decoration:none;
-  color:inherit
+  color:inherit;
 }
+
+/* NAVIGATION */
 
 nav{
   position:sticky;
@@ -42,48 +46,74 @@ nav{
   z-index:20;
   background:rgba(5,40,30,.98);
   color:#fff;
-  padding:14px 5%;
+  padding:12px 5%;
   display:flex;
   justify-content:space-between;
-  align-items:center
+  align-items:center;
 }
 
 .brand{
+  display:flex;
+  align-items:center;
+  gap:10px;
   font-weight:800;
-  letter-spacing:2px
+  letter-spacing:2px;
 }
 
-.brand span{
+.brand-logo{
+  width:48px;
+  height:48px;
+  object-fit:contain;
+  border-radius:6px;
+}
+
+.brand-text span{
   color:var(--gold);
   font-weight:500;
-  letter-spacing:1px
+  letter-spacing:1px;
 }
 
 .links{
   display:flex;
   gap:24px;
-  font-size:14px
+  font-size:14px;
 }
 
 .links a:hover{
-  color:var(--gold)
+  color:var(--gold);
 }
+
+/* HERO */
 
 .hero{
   min-height:82vh;
   display:flex;
   align-items:center;
   color:#fff;
+
   background:
-    linear-gradient(90deg,rgba(3,28,21,.94),rgba(3,28,21,.52)),
-    url('realisation-5.jpeg?v=2') center/cover
+    linear-gradient(
+      90deg,
+      rgba(3,28,21,.94),
+      rgba(3,28,21,.52)
+    ),
+    url('realisation-3.jpeg?v=3') center/cover;
 }
 
 .hero-in{
   max-width:1100px;
   width:100%;
   margin:auto;
-  padding:70px 5%
+  padding:70px 5%;
+}
+
+.hero-logo{
+  width:180px;
+  height:100px;
+  object-fit:contain;
+  object-position:center;
+  margin-bottom:20px;
+  border-radius:10px;
 }
 
 .eyebrow{
@@ -91,171 +121,191 @@ nav{
   font-weight:700;
   letter-spacing:2px;
   text-transform:uppercase;
-  font-size:13px
+  font-size:13px;
 }
 
 h1{
   font-size:clamp(44px,7vw,78px);
   line-height:1.02;
-  margin:12px 0 22px
+  margin:12px 0 22px;
 }
 
 .buttons{
   display:flex;
   gap:12px;
   flex-wrap:wrap;
-  margin-top:28px
+  margin-top:28px;
 }
 
 .btn{
   padding:14px 22px;
   border-radius:999px;
-  font-weight:700
+  font-weight:700;
 }
 
 .primary{
   background:var(--gold);
-  color:#12251d
+  color:#12251d;
 }
 
 .secondary{
   border:1px solid #fff;
-  color:#fff
+  color:#fff;
 }
 
+/* SECTIONS */
+
 section{
-  padding:78px 5%
+  padding:78px 5%;
 }
 
 .container{
   max-width:1100px;
-  margin:auto
+  margin:auto;
 }
 
 .head{
   text-align:center;
   max-width:700px;
-  margin:0 auto 42px
+  margin:0 auto 42px;
 }
 
 .head h2{
   font-size:36px;
   margin:0 0 8px;
-  color:var(--green)
+  color:var(--green);
 }
 
 .head p{
-  color:#64766e
+  color:#64766e;
 }
+
+/* SERVICES */
 
 .cards{
   display:grid;
   grid-template-columns:repeat(3,1fr);
-  gap:18px
+  gap:18px;
 }
 
 .card{
   background:#fff;
   border-radius:20px;
   padding:26px;
-  box-shadow:0 8px 30px #0000000c
+  box-shadow:0 8px 30px #0000000c;
 }
 
 .card h3{
   color:var(--green);
-  margin:10px 0 4px
+  margin:10px 0 4px;
 }
 
 .icon{
-  font-size:27px
+  font-size:27px;
 }
 
+/* ABOUT */
+
 .about{
-  background:#fff
+  background:#fff;
 }
 
 .aboutgrid{
   display:grid;
   grid-template-columns:1fr 1fr;
   gap:48px;
-  align-items:center
+  align-items:center;
 }
 
 .about h2{
   font-size:38px;
-  color:var(--green)
+  color:var(--green);
 }
 
 .box{
   background:var(--green);
   color:#fff;
   border-radius:24px;
-  padding:32px
+  padding:32px;
 }
 
 .box h3{
   color:var(--gold);
   font-size:25px;
-  margin-top:0
+  margin-top:0;
 }
+
+/* REALISATIONS */
 
 .gallery{
   display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:14px
+  grid-template-columns:repeat(2,1fr);
+  gap:24px;
 }
 
-.gallery img{
+.realisation{
+  background:#fff;
+  border-radius:20px;
+  padding:12px;
+  box-shadow:0 8px 30px #0000000c;
+}
+
+.realisation img{
   width:100%;
-  height:290px;
+  height:320px;
   object-fit:cover;
-  border-radius:18px
+  border-radius:14px;
+  display:block;
 }
 
-.gallery .logo{
-  object-fit:contain;
-  background:var(--green)
+.realisation-label{
+  text-align:center;
+  padding:12px 5px 5px;
+  font-weight:700;
+  color:var(--green);
 }
+
+/* CONTACT */
 
 .contact{
   background:var(--green);
-  color:#fff
+  color:#fff;
 }
 
 .contact .head h2{
-  color:#fff
+  color:#fff;
 }
 
 .contact .head p{
-  color:#d6e1db
+  color:#d6e1db;
 }
 
 .contactgrid{
   display:grid;
   grid-template-columns:repeat(2,1fr);
-  gap:18px
+  gap:18px;
 }
 
 .contactcard{
   background:#ffffff12;
   border:1px solid #ffffff22;
   padding:24px;
-  border-radius:18px
+  border-radius:18px;
 }
 
 .contactcard strong{
   display:block;
   color:var(--gold);
-  margin-bottom:5px
+  margin-bottom:5px;
 }
 
 .contactcard a{
-  color:#fff
+  color:#fff;
 }
 
 .social{
   margin-top:28px;
-  text-align:center
+  text-align:center;
 }
 
 .social a{
@@ -263,65 +313,111 @@ section{
   margin:6px 8px;
   padding:11px 18px;
   border:1px solid #ffffff35;
-  border-radius:999px
+  border-radius:999px;
 }
 
 .legal{
   font-size:12px;
   color:#cdd9d3;
   margin-top:24px;
-  text-align:center
+  text-align:center;
 }
+
+/* FOOTER */
 
 footer{
   background:#031812;
   color:#cdd9d3;
   text-align:center;
   padding:25px 5%;
-  font-size:13px
+  font-size:13px;
 }
 
+/* MOBILE */
+
 @media(max-width:800px){
+
   .links{
-    display:none
+    display:none;
+  }
+
+  .brand-logo{
+    width:42px;
+    height:42px;
   }
 
   .cards,
   .aboutgrid,
-  .gallery,
   .contactgrid{
-    grid-template-columns:1fr
+    grid-template-columns:1fr;
+  }
+
+  .gallery{
+    grid-template-columns:1fr;
   }
 
   .hero{
-    min-height:72vh
+    min-height:72vh;
   }
 
-  .gallery img{
-    height:240px
+  .hero-logo{
+    width:150px;
+    height:85px;
+  }
+
+  .realisation img{
+    height:260px;
   }
 
   section{
-    padding:58px 5%
+    padding:58px 5%;
   }
+
 }
+
 </style>
 </head>
 
 <body>
 
+<!-- NAVIGATION -->
+
 <nav>
-  <div class="brand">THIBAULT <span>garden</span></div>
+
+  <div class="brand">
+
+    <img
+      class="brand-logo"
+      src="logo.jpeg?v=3"
+      alt="Logo Thibault Garden"
+    >
+
+    <div class="brand-text">
+      THIBAULT <span>garden</span>
+    </div>
+
+  </div>
 
   <div class="links">
     <a href="#services">Prestations</a>
     <a href="#realisations">Réalisations</a>
     <a href="#contact">Contact</a>
   </div>
+
 </nav>
 
+
+<!-- ACCUEIL -->
+
 <header class="hero">
+
   <div class="hero-in">
+
+    <img
+      class="hero-logo"
+      src="logo.jpeg?v=3"
+      alt="Logo Thibault Garden"
+    >
 
     <div class="eyebrow">
       THIBAULT GARDEN · JARDINIER PAYSAGISTE
@@ -332,64 +428,134 @@ footer{
     </h1>
 
     <div class="buttons">
-      <a class="btn primary" href="tel:0769995280">
+
+      <a
+        class="btn primary"
+        href="tel:0769995280"
+      >
         Appeler
       </a>
 
-      <a class="btn secondary" href="#contact">
+      <a
+        class="btn secondary"
+        href="#contact"
+      >
         Contact
       </a>
+
     </div>
 
   </div>
+
 </header>
+
+
+<!-- PRESTATIONS -->
 
 <section id="services">
 
   <div class="container">
 
     <div class="head">
+
       <h2>Prestations</h2>
-      <p>Tarifs sur devis</p>
+
+      <p>
+        Tarifs sur devis
+      </p>
+
     </div>
+
 
     <div class="cards">
 
-      <div class="card">
-        <div class="icon">🌱</div>
-        <h3>Tonte</h3>
-      </div>
 
       <div class="card">
-        <div class="icon">✂️</div>
-        <h3>Taille</h3>
+
+        <div class="icon">
+          🌱
+        </div>
+
+        <h3>
+          Tonte
+        </h3>
+
       </div>
 
-      <div class="card">
-        <div class="icon">🌿</div>
-        <h3>Débroussaillage</h3>
-      </div>
 
       <div class="card">
-        <div class="icon">🌾</div>
-        <h3>Désherbage</h3>
+
+        <div class="icon">
+          ✂️
+        </div>
+
+        <h3>
+          Taille
+        </h3>
+
       </div>
 
-      <div class="card">
-        <div class="icon">🌳</div>
-        <h3>Rabattage</h3>
-      </div>
 
       <div class="card">
-        <div class="icon">🧹</div>
-        <h3>Nettoyage</h3>
+
+        <div class="icon">
+          🌿
+        </div>
+
+        <h3>
+          Débroussaillage
+        </h3>
+
       </div>
+
+
+      <div class="card">
+
+        <div class="icon">
+          🌾
+        </div>
+
+        <h3>
+          Désherbage
+        </h3>
+
+      </div>
+
+
+      <div class="card">
+
+        <div class="icon">
+          🌳
+        </div>
+
+        <h3>
+          Rabattage
+        </h3>
+
+      </div>
+
+
+      <div class="card">
+
+        <div class="icon">
+          🧹
+        </div>
+
+        <h3>
+          Nettoyage
+        </h3>
+
+      </div>
+
 
     </div>
 
   </div>
 
 </section>
+
+
+<!-- PRESENTATION -->
 
 <section class="about">
 
@@ -406,7 +572,8 @@ footer{
       </h2>
 
       <p>
-        Prestations d’entretien des espaces verts pour particuliers et extérieurs.
+        Prestations d’entretien des espaces verts
+        pour particuliers et extérieurs.
       </p>
 
       <p>
@@ -414,6 +581,7 @@ footer{
       </p>
 
     </div>
+
 
     <div class="box">
 
@@ -435,46 +603,104 @@ footer{
 
 </section>
 
+
+<!-- REALISATIONS -->
+
 <section id="realisations">
 
   <div class="container">
 
     <div class="head">
-      <h2>Réalisations</h2>
+
+      <h2>
+        Réalisations
+      </h2>
+
+      <p>
+        Avant / Après
+      </p>
+
     </div>
+
 
     <div class="gallery">
 
-      <img
-        class="logo"
-        src="logo.jpeg?v=2"
-        alt="Logo Thibault Garden"
-      >
 
-      <img
-        src="realisation-1.jpeg?v=2"
-        alt="Réalisation de jardin"
-      >
+      <!-- AVANT / APRES 1 -->
 
-      <img
-        src="realisation-2.jpeg?v=2"
-        alt="Taille de haie"
-      >
+      <div class="realisation">
 
-      <img
-        src="realisation-3.jpeg?v=2"
-        alt="Taille de haie"
-      >
+        <img
+          src="realisation-1.jpeg?v=3"
+          alt="Avant - entretien de haie"
+        >
 
-      <img
-        src="realisation-4.jpeg?v=2"
-        alt="Entretien de haie"
-      >
+        <div class="realisation-label">
+          Avant
+        </div>
 
-      <img
-        src="realisation-5.jpeg?v=2"
-        alt="Entretien paysager"
-      >
+      </div>
+
+
+      <div class="realisation">
+
+        <img
+          src="realisation-3.jpeg?v=3"
+          alt="Après - entretien de haie"
+        >
+
+        <div class="realisation-label">
+          Après
+        </div>
+
+      </div>
+
+
+      <!-- AVANT / APRES 2 -->
+
+      <div class="realisation">
+
+        <img
+          src="realisation-2.jpeg?v=3"
+          alt="Avant - entretien de haie"
+        >
+
+        <div class="realisation-label">
+          Avant
+        </div>
+
+      </div>
+
+
+      <div class="realisation">
+
+        <img
+          src="realisation-4.jpeg?v=3"
+          alt="Après - entretien de haie"
+        >
+
+        <div class="realisation-label">
+          Après
+        </div>
+
+      </div>
+
+
+      <!-- PORTAIL -->
+
+      <div class="realisation">
+
+        <img
+          src="realisation-5.jpeg?v=3"
+          alt="Entretien extérieur et portail"
+        >
+
+        <div class="realisation-label">
+          Entretien extérieur
+        </div>
+
+      </div>
+
 
     </div>
 
@@ -482,41 +708,75 @@ footer{
 
 </section>
 
+
+<!-- CONTACT -->
+
 <section class="contact" id="contact">
 
   <div class="container">
 
     <div class="head">
-      <h2>Contact</h2>
+
+      <h2>
+        Contact
+      </h2>
+
     </div>
+
 
     <div class="contactgrid">
 
+
       <div class="contactcard">
-        <strong>Téléphone</strong>
+
+        <strong>
+          Téléphone
+        </strong>
+
         <a href="tel:0769995280">
           07 69 99 52 80
         </a>
+
       </div>
 
+
       <div class="contactcard">
-        <strong>E-mail</strong>
+
+        <strong>
+          E-mail
+        </strong>
+
         <a href="mailto:thibaultgardeen@gmail.com">
           thibaultgardeen@gmail.com
         </a>
+
       </div>
 
+
       <div class="contactcard">
-        <strong>Zone</strong>
+
+        <strong>
+          Zone
+        </strong>
+
         95 / 27 / 78 et alentours
+
       </div>
 
+
       <div class="contactcard">
-        <strong>Tarifs</strong>
+
+        <strong>
+          Tarifs
+        </strong>
+
         Sur devis
+
       </div>
+
 
     </div>
+
 
     <div class="social">
 
@@ -528,6 +788,7 @@ footer{
         Instagram · @Thibault.gaedeen
       </a>
 
+
       <a
         href="https://www.facebook.com/Thibaultgardeen"
         target="_blank"
@@ -538,6 +799,7 @@ footer{
 
     </div>
 
+
     <div class="legal">
       SIRET : à compléter
     </div>
@@ -546,9 +808,15 @@ footer{
 
 </section>
 
+
+<!-- FOOTER -->
+
 <footer>
+
   © 2026 Thibault Garden
+
 </footer>
+
 
 </body>
 </html>
